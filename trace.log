@@ -1,0 +1,499 @@
+2022-10-07T17:44:34.445+0100 [INFO]  Terraform version: 1.3.2
+2022-10-07T17:44:34.445+0100 [DEBUG] using github.com/hashicorp/go-tfe v1.9.0
+2022-10-07T17:44:34.445+0100 [DEBUG] using github.com/hashicorp/hcl/v2 v2.14.1
+2022-10-07T17:44:34.445+0100 [DEBUG] using github.com/hashicorp/terraform-config-inspect v0.0.0-20210209133302-4fd17a0faac2
+2022-10-07T17:44:34.445+0100 [DEBUG] using github.com/hashicorp/terraform-svchost v0.0.0-20200729002733-f050f53b9734
+2022-10-07T17:44:34.445+0100 [DEBUG] using github.com/zclconf/go-cty v1.11.0
+2022-10-07T17:44:34.445+0100 [INFO]  Go runtime version: go1.19.1
+2022-10-07T17:44:34.445+0100 [INFO]  CLI args: []string{"/usr/local/Cellar/tfenv/3.0.0/versions/1.3.2/terraform", "plan"}
+2022-10-07T17:44:34.445+0100 [TRACE] Stdout is a terminal of width 200
+2022-10-07T17:44:34.445+0100 [TRACE] Stderr is not a terminal
+2022-10-07T17:44:34.445+0100 [TRACE] Stdin is a terminal
+2022-10-07T17:44:34.445+0100 [DEBUG] Attempting to open CLI config file: /Users/rquadling/.terraformrc
+2022-10-07T17:44:34.446+0100 [INFO]  Loading CLI configuration from /Users/rquadling/.terraformrc
+2022-10-07T17:44:34.446+0100 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2022-10-07T17:44:34.446+0100 [DEBUG] ignoring non-existing provider search directory /Users/rquadling/.terraform.d/plugins
+2022-10-07T17:44:34.446+0100 [DEBUG] ignoring non-existing provider search directory /Users/rquadling/Library/Application Support/io.terraform/plugins
+2022-10-07T17:44:34.446+0100 [DEBUG] ignoring non-existing provider search directory /Library/Application Support/io.terraform/plugins
+2022-10-07T17:44:34.447+0100 [INFO]  CLI command args: []string{"plan"}
+2022-10-07T17:44:34.448+0100 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2022-10-07T17:44:34.448+0100 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2022-10-07T17:44:34.448+0100 [DEBUG] New state was assigned lineage "7426161c-bc26-b71a-dd40-27335f306b16"
+2022-10-07T17:44:34.448+0100 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2022-10-07T17:44:34.448+0100 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2022-10-07T17:44:34.449+0100 [DEBUG] checking for provisioner in "."
+2022-10-07T17:44:34.449+0100 [DEBUG] checking for provisioner in "/usr/local/Cellar/tfenv/3.0.0/versions/1.3.2"
+2022-10-07T17:44:34.449+0100 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2022-10-07T17:44:34.449+0100 [INFO]  backend/local: starting Plan operation
+2022-10-07T17:44:34.449+0100 [TRACE] backend/local: requesting state manager for workspace "default"
+2022-10-07T17:44:34.449+0100 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2022-10-07T17:44:34.449+0100 [TRACE] backend/local: requesting state lock for workspace "default"
+2022-10-07T17:44:34.450+0100 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2022-10-07T17:44:34.450+0100 [TRACE] statemgr.Filesystem: no previously-stored snapshot exists
+2022-10-07T17:44:34.450+0100 [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
+2022-10-07T17:44:34.450+0100 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2022-10-07T17:44:34.450+0100 [TRACE] backend/local: reading remote state for workspace "default"
+2022-10-07T17:44:34.450+0100 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2022-10-07T17:44:34.450+0100 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2022-10-07T17:44:34.450+0100 [TRACE] statemgr.Filesystem: read nil snapshot
+2022-10-07T17:44:34.450+0100 [TRACE] backend/local: populating backend.LocalRun for current working directory
+2022-10-07T17:44:34.453+0100 [TRACE] terraform.NewContext: starting
+2022-10-07T17:44:34.453+0100 [TRACE] terraform.NewContext: complete
+2022-10-07T17:44:34.453+0100 [TRACE] backend/local: requesting interactive input, if necessary
+2022-10-07T17:44:34.453+0100 [TRACE] Context.Input: Prompting for provider arguments
+2022-10-07T17:44:34.453+0100 [TRACE] backend/local: running validation operation
+2022-10-07T17:44:34.453+0100 [DEBUG] Building and walking validate graph
+2022-10-07T17:44:34.453+0100 [TRACE] building graph for walkValidate
+2022-10-07T17:44:34.453+0100 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2022-10-07T17:44:34.453+0100 [TRACE] ConfigTransformer: Starting for path:
+2022-10-07T17:44:34.453+0100 [TRACE] ConfigTransformer: Starting for path: module.module_generates_the_failure
+2022-10-07T17:44:34.453+0100 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2022-10-07T17:44:34.453+0100 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2022-10-07T17:44:34.453+0100 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2022-10-07T17:44:34.453+0100 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2022-10-07T17:44:34.453+0100 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer with new graph:
+  module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+  ------
+2022-10-07T17:44:34.453+0100 [TRACE] Executing graph transform *terraform.LocalTransformer
+2022-10-07T17:44:34.453+0100 [TRACE] Completed graph transform *terraform.LocalTransformer with new graph:
+  local.a_map_to_iterate (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+  ------
+2022-10-07T17:44:34.453+0100 [TRACE] Executing graph transform *terraform.OutputTransformer
+2022-10-07T17:44:34.453+0100 [TRACE] OutputTransformer: adding outgoing as *terraform.nodeExpandOutput
+2022-10-07T17:44:34.453+0100 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+  local.a_map_to_iterate (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure.output.outgoing (expand) - *terraform.nodeExpandOutput
+  module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+  ------
+2022-10-07T17:44:34.453+0100 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2022-10-07T17:44:34.453+0100 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2022-10-07T17:44:34.453+0100 [TRACE] Executing graph transform *terraform.StateTransformer
+2022-10-07T17:44:34.453+0100 [TRACE] StateTransformer: pointless no-op call, creating no nodes at all
+2022-10-07T17:44:34.453+0100 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2022-10-07T17:44:34.453+0100 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2022-10-07T17:44:34.453+0100 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2022-10-07T17:44:34.453+0100 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2022-10-07T17:44:34.453+0100 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2022-10-07T17:44:34.453+0100 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2022-10-07T17:44:34.453+0100 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2022-10-07T17:44:34.453+0100 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2022-10-07T17:44:34.453+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2022-10-07T17:44:34.453+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  local.a_map_to_iterate (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure.output.outgoing (expand) - *terraform.nodeExpandOutput
+  module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+  ------
+2022-10-07T17:44:34.453+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2022-10-07T17:44:34.453+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2022-10-07T17:44:34.453+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2022-10-07T17:44:34.453+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer (no changes)
+2022-10-07T17:44:34.453+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2022-10-07T17:44:34.453+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2022-10-07T17:44:34.453+0100 [TRACE] Completed graph transform *terraform.graphTransformerMulti (no changes)
+2022-10-07T17:44:34.453+0100 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2022-10-07T17:44:34.453+0100 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2022-10-07T17:44:34.453+0100 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2022-10-07T17:44:34.453+0100 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2022-10-07T17:44:34.453+0100 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2022-10-07T17:44:34.453+0100 [TRACE] ModuleExpansionTransformer: Added module.module_generates_the_failure as *terraform.nodeValidateModule
+2022-10-07T17:44:34.453+0100 [TRACE] ModuleExpansionTransformer: module.module_generates_the_failure.var.incoming (expand) must wait for expansion of module.module_generates_the_failure
+2022-10-07T17:44:34.453+0100 [TRACE] ModuleExpansionTransformer: module.module_generates_the_failure.local.some_result (expand) must wait for expansion of module.module_generates_the_failure
+2022-10-07T17:44:34.453+0100 [TRACE] ModuleExpansionTransformer: module.module_generates_the_failure.output.outgoing (expand) must wait for expansion of module.module_generates_the_failure
+2022-10-07T17:44:34.453+0100 [TRACE] ModuleExpansionTransformer: module.module_generates_the_failure (close) must wait for expansion of module.module_generates_the_failure
+2022-10-07T17:44:34.454+0100 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer with new graph:
+  local.a_map_to_iterate (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure (close) - *terraform.nodeCloseModule
+    module.module_generates_the_failure (expand) - *terraform.nodeValidateModule
+    module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+    module.module_generates_the_failure.output.outgoing (expand) - *terraform.nodeExpandOutput
+    module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+  module.module_generates_the_failure (expand) - *terraform.nodeValidateModule
+  module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+    module.module_generates_the_failure (expand) - *terraform.nodeValidateModule
+  module.module_generates_the_failure.output.outgoing (expand) - *terraform.nodeExpandOutput
+    module.module_generates_the_failure (expand) - *terraform.nodeValidateModule
+  module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+    module.module_generates_the_failure (expand) - *terraform.nodeValidateModule
+  ------
+2022-10-07T17:44:34.454+0100 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2022-10-07T17:44:34.454+0100 [DEBUG] ReferenceTransformer: "module.module_generates_the_failure.local.some_result (expand)" references: [module.module_generates_the_failure.var.incoming (expand)]
+2022-10-07T17:44:34.454+0100 [DEBUG] ReferenceTransformer: "module.module_generates_the_failure.output.outgoing (expand)" references: [module.module_generates_the_failure.local.some_result (expand) module.module_generates_the_failure.local.some_result (expand)]
+2022-10-07T17:44:34.454+0100 [DEBUG] ReferenceTransformer: "module.module_generates_the_failure (expand)" references: [local.a_map_to_iterate (expand)]
+2022-10-07T17:44:34.454+0100 [DEBUG] ReferenceTransformer: "module.module_generates_the_failure (close)" references: []
+2022-10-07T17:44:34.454+0100 [INFO]  ReferenceTransformer: reference not found: "each.value"
+2022-10-07T17:44:34.454+0100 [DEBUG] ReferenceTransformer: "module.module_generates_the_failure.var.incoming (expand)" references: []
+2022-10-07T17:44:34.454+0100 [DEBUG] ReferenceTransformer: "local.a_map_to_iterate (expand)" references: []
+2022-10-07T17:44:34.454+0100 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  local.a_map_to_iterate (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure (close) - *terraform.nodeCloseModule
+    module.module_generates_the_failure (expand) - *terraform.nodeValidateModule
+    module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+    module.module_generates_the_failure.output.outgoing (expand) - *terraform.nodeExpandOutput
+    module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+  module.module_generates_the_failure (expand) - *terraform.nodeValidateModule
+    local.a_map_to_iterate (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+    module.module_generates_the_failure (expand) - *terraform.nodeValidateModule
+    module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+  module.module_generates_the_failure.output.outgoing (expand) - *terraform.nodeExpandOutput
+    module.module_generates_the_failure (expand) - *terraform.nodeValidateModule
+    module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+    module.module_generates_the_failure (expand) - *terraform.nodeValidateModule
+  ------
+2022-10-07T17:44:34.454+0100 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2022-10-07T17:44:34.454+0100 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2022-10-07T17:44:34.454+0100 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2022-10-07T17:44:34.454+0100 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2022-10-07T17:44:34.454+0100 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2022-10-07T17:44:34.454+0100 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2022-10-07T17:44:34.454+0100 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2022-10-07T17:44:34.454+0100 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2022-10-07T17:44:34.454+0100 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2022-10-07T17:44:34.454+0100 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2022-10-07T17:44:34.454+0100 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2022-10-07T17:44:34.454+0100 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2022-10-07T17:44:34.454+0100 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2022-10-07T17:44:34.454+0100 [TRACE] Completed graph transform *terraform.CloseProviderTransformer (no changes)
+2022-10-07T17:44:34.454+0100 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2022-10-07T17:44:34.454+0100 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  local.a_map_to_iterate (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure (close) - *terraform.nodeCloseModule
+    module.module_generates_the_failure (expand) - *terraform.nodeValidateModule
+    module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+    module.module_generates_the_failure.output.outgoing (expand) - *terraform.nodeExpandOutput
+    module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+  module.module_generates_the_failure (expand) - *terraform.nodeValidateModule
+    local.a_map_to_iterate (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+    module.module_generates_the_failure (expand) - *terraform.nodeValidateModule
+    module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+  module.module_generates_the_failure.output.outgoing (expand) - *terraform.nodeExpandOutput
+    module.module_generates_the_failure (expand) - *terraform.nodeValidateModule
+    module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+    module.module_generates_the_failure (expand) - *terraform.nodeValidateModule
+  root - *terraform.nodeCloseModule
+    module.module_generates_the_failure (close) - *terraform.nodeCloseModule
+  ------
+2022-10-07T17:44:34.454+0100 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2022-10-07T17:44:34.454+0100 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  local.a_map_to_iterate (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure (close) - *terraform.nodeCloseModule
+    module.module_generates_the_failure.output.outgoing (expand) - *terraform.nodeExpandOutput
+  module.module_generates_the_failure (expand) - *terraform.nodeValidateModule
+    local.a_map_to_iterate (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+    module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+  module.module_generates_the_failure.output.outgoing (expand) - *terraform.nodeExpandOutput
+    module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+    module.module_generates_the_failure (expand) - *terraform.nodeValidateModule
+  root - *terraform.nodeCloseModule
+    module.module_generates_the_failure (close) - *terraform.nodeCloseModule
+  ------
+2022-10-07T17:44:34.454+0100 [DEBUG] Starting graph walk: walkValidate
+2022-10-07T17:44:34.455+0100 [TRACE] vertex "local.a_map_to_iterate (expand)": starting visit (*terraform.nodeExpandLocal)
+2022-10-07T17:44:34.455+0100 [TRACE] vertex "local.a_map_to_iterate (expand)": expanding dynamic subgraph
+2022-10-07T17:44:34.455+0100 [TRACE] Expanding local: adding local.a_map_to_iterate as *terraform.NodeLocal
+2022-10-07T17:44:34.455+0100 [TRACE] vertex "local.a_map_to_iterate (expand)": entering dynamic subgraph
+2022-10-07T17:44:34.455+0100 [TRACE] vertex "local.a_map_to_iterate": starting visit (*terraform.NodeLocal)
+2022-10-07T17:44:34.455+0100 [TRACE] vertex "local.a_map_to_iterate": visit complete
+2022-10-07T17:44:34.455+0100 [TRACE] vertex "local.a_map_to_iterate (expand)": dynamic subgraph completed successfully
+2022-10-07T17:44:34.455+0100 [TRACE] vertex "local.a_map_to_iterate (expand)": visit complete
+2022-10-07T17:44:34.455+0100 [TRACE] vertex "module.module_generates_the_failure (expand)": starting visit (*terraform.nodeValidateModule)
+2022-10-07T17:44:34.455+0100 [TRACE] vertex "module.module_generates_the_failure (expand)": visit complete
+2022-10-07T17:44:34.455+0100 [TRACE] vertex "module.module_generates_the_failure.var.incoming (expand)": starting visit (*terraform.nodeExpandModuleVariable)
+2022-10-07T17:44:34.455+0100 [TRACE] vertex "module.module_generates_the_failure.var.incoming (expand)": expanding dynamic subgraph
+2022-10-07T17:44:34.455+0100 [TRACE] vertex "module.module_generates_the_failure.var.incoming (expand)": entering dynamic subgraph
+2022-10-07T17:44:34.455+0100 [TRACE] vertex "module.module_generates_the_failure.var.incoming": starting visit (*terraform.nodeModuleVariable)
+2022-10-07T17:44:34.455+0100 [TRACE] nodeModuleVariable: evaluating module.module_generates_the_failure.var.incoming
+2022-10-07T17:44:34.455+0100 [TRACE] prepareFinalInputVariableValue: preparing module.module_generates_the_failure.var.incoming
+2022-10-07T17:44:34.455+0100 [TRACE] BuiltinEvalContext: Storing final value for variable module.module_generates_the_failure.var.incoming
+2022-10-07T17:44:34.455+0100 [TRACE] evalVariableValidations: no validation rules declared for module.module_generates_the_failure.var.incoming, so skipping
+2022-10-07T17:44:34.455+0100 [TRACE] vertex "module.module_generates_the_failure.var.incoming": visit complete
+2022-10-07T17:44:34.455+0100 [TRACE] vertex "module.module_generates_the_failure.var.incoming (expand)": dynamic subgraph completed successfully
+2022-10-07T17:44:34.455+0100 [TRACE] vertex "module.module_generates_the_failure.var.incoming (expand)": visit complete
+2022-10-07T17:44:34.455+0100 [TRACE] vertex "module.module_generates_the_failure.local.some_result (expand)": starting visit (*terraform.nodeExpandLocal)
+2022-10-07T17:44:34.455+0100 [TRACE] vertex "module.module_generates_the_failure.local.some_result (expand)": expanding dynamic subgraph
+2022-10-07T17:44:34.455+0100 [TRACE] Expanding local: adding module.module_generates_the_failure.local.some_result as *terraform.NodeLocal
+2022-10-07T17:44:34.455+0100 [TRACE] vertex "module.module_generates_the_failure.local.some_result (expand)": entering dynamic subgraph
+2022-10-07T17:44:34.455+0100 [TRACE] vertex "module.module_generates_the_failure.local.some_result": starting visit (*terraform.NodeLocal)
+2022-10-07T17:44:34.456+0100 [TRACE] vertex "module.module_generates_the_failure.local.some_result": visit complete
+2022-10-07T17:44:34.456+0100 [TRACE] vertex "module.module_generates_the_failure.local.some_result (expand)": dynamic subgraph completed successfully
+2022-10-07T17:44:34.456+0100 [TRACE] vertex "module.module_generates_the_failure.local.some_result (expand)": visit complete
+2022-10-07T17:44:34.456+0100 [TRACE] vertex "module.module_generates_the_failure.output.outgoing (expand)": starting visit (*terraform.nodeExpandOutput)
+2022-10-07T17:44:34.456+0100 [TRACE] vertex "module.module_generates_the_failure.output.outgoing (expand)": expanding dynamic subgraph
+2022-10-07T17:44:34.456+0100 [TRACE] Expanding output: adding module.module_generates_the_failure.output.outgoing as *terraform.NodeApplyableOutput
+2022-10-07T17:44:34.456+0100 [TRACE] vertex "module.module_generates_the_failure.output.outgoing (expand)": entering dynamic subgraph
+2022-10-07T17:44:34.456+0100 [TRACE] vertex "module.module_generates_the_failure.output.outgoing": starting visit (*terraform.NodeApplyableOutput)
+2022-10-07T17:44:34.456+0100 [TRACE] evalCheckRules: module.module_generates_the_failure.output.outgoing status is now StatusUnknown
+2022-10-07T17:44:34.456+0100 [TRACE] setValue: Saving Create change for module.module_generates_the_failure.output.outgoing in changeset
+2022-10-07T17:44:34.456+0100 [TRACE] setValue: Saving value for module.module_generates_the_failure.output.outgoing in state
+2022-10-07T17:44:34.456+0100 [TRACE] vertex "module.module_generates_the_failure.output.outgoing": visit complete
+2022-10-07T17:44:34.456+0100 [TRACE] vertex "module.module_generates_the_failure.output.outgoing (expand)": dynamic subgraph completed successfully
+2022-10-07T17:44:34.456+0100 [TRACE] vertex "module.module_generates_the_failure.output.outgoing (expand)": visit complete
+2022-10-07T17:44:34.456+0100 [TRACE] vertex "module.module_generates_the_failure (close)": starting visit (*terraform.nodeCloseModule)
+2022-10-07T17:44:34.456+0100 [TRACE] vertex "module.module_generates_the_failure (close)": visit complete
+2022-10-07T17:44:34.456+0100 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2022-10-07T17:44:34.456+0100 [TRACE] vertex "root": visit complete
+2022-10-07T17:44:34.456+0100 [INFO]  backend/local: plan calling Plan
+2022-10-07T17:44:34.456+0100 [DEBUG] Building and walking plan graph for NormalMode
+2022-10-07T17:44:34.456+0100 [TRACE] building graph for walkPlan
+2022-10-07T17:44:34.456+0100 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2022-10-07T17:44:34.456+0100 [TRACE] ConfigTransformer: Starting for path:
+2022-10-07T17:44:34.456+0100 [TRACE] ConfigTransformer: Starting for path: module.module_generates_the_failure
+2022-10-07T17:44:34.456+0100 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2022-10-07T17:44:34.456+0100 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2022-10-07T17:44:34.456+0100 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2022-10-07T17:44:34.456+0100 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2022-10-07T17:44:34.456+0100 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer with new graph:
+  module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+  ------
+2022-10-07T17:44:34.456+0100 [TRACE] Executing graph transform *terraform.LocalTransformer
+2022-10-07T17:44:34.456+0100 [TRACE] Completed graph transform *terraform.LocalTransformer with new graph:
+  local.a_map_to_iterate (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+  ------
+2022-10-07T17:44:34.456+0100 [TRACE] Executing graph transform *terraform.OutputTransformer
+2022-10-07T17:44:34.456+0100 [TRACE] OutputTransformer: adding outgoing as *terraform.nodeExpandOutput
+2022-10-07T17:44:34.456+0100 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+  local.a_map_to_iterate (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure.output.outgoing (expand) - *terraform.nodeExpandOutput
+  module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+  ------
+2022-10-07T17:44:34.456+0100 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2022-10-07T17:44:34.456+0100 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2022-10-07T17:44:34.456+0100 [TRACE] Executing graph transform *terraform.StateTransformer
+2022-10-07T17:44:34.456+0100 [TRACE] StateTransformer: creating nodes for deposed instance objects only
+2022-10-07T17:44:34.456+0100 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2022-10-07T17:44:34.456+0100 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2022-10-07T17:44:34.456+0100 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2022-10-07T17:44:34.456+0100 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2022-10-07T17:44:34.456+0100 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2022-10-07T17:44:34.456+0100 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2022-10-07T17:44:34.457+0100 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2022-10-07T17:44:34.457+0100 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2022-10-07T17:44:34.457+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2022-10-07T17:44:34.457+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  local.a_map_to_iterate (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure.output.outgoing (expand) - *terraform.nodeExpandOutput
+  module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+  ------
+2022-10-07T17:44:34.457+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2022-10-07T17:44:34.457+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2022-10-07T17:44:34.457+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2022-10-07T17:44:34.457+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer (no changes)
+2022-10-07T17:44:34.457+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2022-10-07T17:44:34.457+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2022-10-07T17:44:34.457+0100 [TRACE] Completed graph transform *terraform.graphTransformerMulti (no changes)
+2022-10-07T17:44:34.457+0100 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2022-10-07T17:44:34.457+0100 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2022-10-07T17:44:34.457+0100 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2022-10-07T17:44:34.457+0100 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2022-10-07T17:44:34.457+0100 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2022-10-07T17:44:34.457+0100 [TRACE] ModuleExpansionTransformer: Added module.module_generates_the_failure as *terraform.nodeExpandModule
+2022-10-07T17:44:34.457+0100 [TRACE] ModuleExpansionTransformer: module.module_generates_the_failure.local.some_result (expand) must wait for expansion of module.module_generates_the_failure
+2022-10-07T17:44:34.457+0100 [TRACE] ModuleExpansionTransformer: module.module_generates_the_failure.output.outgoing (expand) must wait for expansion of module.module_generates_the_failure
+2022-10-07T17:44:34.457+0100 [TRACE] ModuleExpansionTransformer: module.module_generates_the_failure (close) must wait for expansion of module.module_generates_the_failure
+2022-10-07T17:44:34.457+0100 [TRACE] ModuleExpansionTransformer: module.module_generates_the_failure.var.incoming (expand) must wait for expansion of module.module_generates_the_failure
+2022-10-07T17:44:34.457+0100 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer with new graph:
+  local.a_map_to_iterate (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure (close) - *terraform.nodeCloseModule
+    module.module_generates_the_failure (expand) - *terraform.nodeExpandModule
+    module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+    module.module_generates_the_failure.output.outgoing (expand) - *terraform.nodeExpandOutput
+    module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+  module.module_generates_the_failure (expand) - *terraform.nodeExpandModule
+  module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+    module.module_generates_the_failure (expand) - *terraform.nodeExpandModule
+  module.module_generates_the_failure.output.outgoing (expand) - *terraform.nodeExpandOutput
+    module.module_generates_the_failure (expand) - *terraform.nodeExpandModule
+  module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+    module.module_generates_the_failure (expand) - *terraform.nodeExpandModule
+  ------
+2022-10-07T17:44:34.457+0100 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2022-10-07T17:44:34.457+0100 [DEBUG] ReferenceTransformer: "module.module_generates_the_failure (expand)" references: [local.a_map_to_iterate (expand)]
+2022-10-07T17:44:34.457+0100 [DEBUG] ReferenceTransformer: "module.module_generates_the_failure (close)" references: []
+2022-10-07T17:44:34.457+0100 [INFO]  ReferenceTransformer: reference not found: "each.value"
+2022-10-07T17:44:34.457+0100 [DEBUG] ReferenceTransformer: "module.module_generates_the_failure.var.incoming (expand)" references: []
+2022-10-07T17:44:34.457+0100 [DEBUG] ReferenceTransformer: "local.a_map_to_iterate (expand)" references: []
+2022-10-07T17:44:34.457+0100 [DEBUG] ReferenceTransformer: "module.module_generates_the_failure.local.some_result (expand)" references: [module.module_generates_the_failure.var.incoming (expand)]
+2022-10-07T17:44:34.457+0100 [DEBUG] ReferenceTransformer: "module.module_generates_the_failure.output.outgoing (expand)" references: [module.module_generates_the_failure.local.some_result (expand) module.module_generates_the_failure.local.some_result (expand)]
+2022-10-07T17:44:34.457+0100 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  local.a_map_to_iterate (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure (close) - *terraform.nodeCloseModule
+    module.module_generates_the_failure (expand) - *terraform.nodeExpandModule
+    module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+    module.module_generates_the_failure.output.outgoing (expand) - *terraform.nodeExpandOutput
+    module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+  module.module_generates_the_failure (expand) - *terraform.nodeExpandModule
+    local.a_map_to_iterate (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+    module.module_generates_the_failure (expand) - *terraform.nodeExpandModule
+    module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+  module.module_generates_the_failure.output.outgoing (expand) - *terraform.nodeExpandOutput
+    module.module_generates_the_failure (expand) - *terraform.nodeExpandModule
+    module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+    module.module_generates_the_failure (expand) - *terraform.nodeExpandModule
+  ------
+2022-10-07T17:44:34.457+0100 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2022-10-07T17:44:34.457+0100 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2022-10-07T17:44:34.457+0100 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2022-10-07T17:44:34.457+0100 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2022-10-07T17:44:34.457+0100 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2022-10-07T17:44:34.457+0100 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2022-10-07T17:44:34.457+0100 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2022-10-07T17:44:34.457+0100 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2022-10-07T17:44:34.457+0100 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2022-10-07T17:44:34.457+0100 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2022-10-07T17:44:34.457+0100 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2022-10-07T17:44:34.457+0100 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2022-10-07T17:44:34.457+0100 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2022-10-07T17:44:34.457+0100 [TRACE] Completed graph transform *terraform.CloseProviderTransformer (no changes)
+2022-10-07T17:44:34.457+0100 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2022-10-07T17:44:34.457+0100 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  local.a_map_to_iterate (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure (close) - *terraform.nodeCloseModule
+    module.module_generates_the_failure (expand) - *terraform.nodeExpandModule
+    module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+    module.module_generates_the_failure.output.outgoing (expand) - *terraform.nodeExpandOutput
+    module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+  module.module_generates_the_failure (expand) - *terraform.nodeExpandModule
+    local.a_map_to_iterate (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+    module.module_generates_the_failure (expand) - *terraform.nodeExpandModule
+    module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+  module.module_generates_the_failure.output.outgoing (expand) - *terraform.nodeExpandOutput
+    module.module_generates_the_failure (expand) - *terraform.nodeExpandModule
+    module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+    module.module_generates_the_failure (expand) - *terraform.nodeExpandModule
+  root - *terraform.nodeCloseModule
+    module.module_generates_the_failure (close) - *terraform.nodeCloseModule
+  ------
+2022-10-07T17:44:34.458+0100 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2022-10-07T17:44:34.458+0100 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  local.a_map_to_iterate (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure (close) - *terraform.nodeCloseModule
+    module.module_generates_the_failure.output.outgoing (expand) - *terraform.nodeExpandOutput
+  module.module_generates_the_failure (expand) - *terraform.nodeExpandModule
+    local.a_map_to_iterate (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+    module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+  module.module_generates_the_failure.output.outgoing (expand) - *terraform.nodeExpandOutput
+    module.module_generates_the_failure.local.some_result (expand) - *terraform.nodeExpandLocal
+  module.module_generates_the_failure.var.incoming (expand) - *terraform.nodeExpandModuleVariable
+    module.module_generates_the_failure (expand) - *terraform.nodeExpandModule
+  root - *terraform.nodeCloseModule
+    module.module_generates_the_failure (close) - *terraform.nodeCloseModule
+  ------
+2022-10-07T17:44:34.458+0100 [DEBUG] Starting graph walk: walkPlan
+2022-10-07T17:44:34.458+0100 [TRACE] vertex "local.a_map_to_iterate (expand)": starting visit (*terraform.nodeExpandLocal)
+2022-10-07T17:44:34.458+0100 [TRACE] vertex "local.a_map_to_iterate (expand)": expanding dynamic subgraph
+2022-10-07T17:44:34.458+0100 [TRACE] Expanding local: adding local.a_map_to_iterate as *terraform.NodeLocal
+2022-10-07T17:44:34.458+0100 [TRACE] vertex "local.a_map_to_iterate (expand)": entering dynamic subgraph
+2022-10-07T17:44:34.458+0100 [TRACE] vertex "local.a_map_to_iterate": starting visit (*terraform.NodeLocal)
+2022-10-07T17:44:34.458+0100 [TRACE] vertex "local.a_map_to_iterate": visit complete
+2022-10-07T17:44:34.458+0100 [TRACE] vertex "local.a_map_to_iterate (expand)": dynamic subgraph completed successfully
+2022-10-07T17:44:34.458+0100 [TRACE] vertex "local.a_map_to_iterate (expand)": visit complete
+2022-10-07T17:44:34.458+0100 [TRACE] vertex "module.module_generates_the_failure (expand)": starting visit (*terraform.nodeExpandModule)
+2022-10-07T17:44:34.458+0100 [TRACE] vertex "module.module_generates_the_failure (expand)": visit complete
+2022-10-07T17:44:34.458+0100 [TRACE] vertex "module.module_generates_the_failure.var.incoming (expand)": starting visit (*terraform.nodeExpandModuleVariable)
+2022-10-07T17:44:34.458+0100 [TRACE] vertex "module.module_generates_the_failure.var.incoming (expand)": expanding dynamic subgraph
+2022-10-07T17:44:34.458+0100 [TRACE] vertex "module.module_generates_the_failure.var.incoming (expand)": entering dynamic subgraph
+2022-10-07T17:44:34.458+0100 [TRACE] vertex "module.module_generates_the_failure[\"ok\"].var.incoming": starting visit (*terraform.nodeModuleVariable)
+2022-10-07T17:44:34.459+0100 [TRACE] vertex "module.module_generates_the_failure[\"bad\"].var.incoming": starting visit (*terraform.nodeModuleVariable)
+2022-10-07T17:44:34.459+0100 [TRACE] nodeModuleVariable: evaluating module.module_generates_the_failure["bad"].var.incoming
+2022-10-07T17:44:34.459+0100 [TRACE] nodeModuleVariable: evaluating module.module_generates_the_failure["ok"].var.incoming
+2022-10-07T17:44:34.459+0100 [TRACE] prepareFinalInputVariableValue: preparing module.module_generates_the_failure["bad"].var.incoming
+2022-10-07T17:44:34.459+0100 [TRACE] BuiltinEvalContext: Storing final value for variable module.module_generates_the_failure["bad"].var.incoming
+2022-10-07T17:44:34.459+0100 [TRACE] vertex "module.module_generates_the_failure[\"fail\"].var.incoming": starting visit (*terraform.nodeModuleVariable)
+2022-10-07T17:44:34.459+0100 [TRACE] nodeModuleVariable: evaluating module.module_generates_the_failure["fail"].var.incoming
+2022-10-07T17:44:34.459+0100 [TRACE] prepareFinalInputVariableValue: preparing module.module_generates_the_failure["ok"].var.incoming
+2022-10-07T17:44:34.459+0100 [TRACE] prepareFinalInputVariableValue: preparing module.module_generates_the_failure["fail"].var.incoming
+2022-10-07T17:44:34.459+0100 [TRACE] evalVariableValidations: no validation rules declared for module.module_generates_the_failure["bad"].var.incoming, so skipping
+2022-10-07T17:44:34.459+0100 [TRACE] vertex "module.module_generates_the_failure[\"bad\"].var.incoming": visit complete
+2022-10-07T17:44:34.459+0100 [TRACE] BuiltinEvalContext: Storing final value for variable module.module_generates_the_failure["ok"].var.incoming
+2022-10-07T17:44:34.459+0100 [TRACE] evalVariableValidations: no validation rules declared for module.module_generates_the_failure["ok"].var.incoming, so skipping
+2022-10-07T17:44:34.459+0100 [TRACE] BuiltinEvalContext: Storing final value for variable module.module_generates_the_failure["fail"].var.incoming
+2022-10-07T17:44:34.459+0100 [TRACE] evalVariableValidations: no validation rules declared for module.module_generates_the_failure["fail"].var.incoming, so skipping
+2022-10-07T17:44:34.459+0100 [TRACE] vertex "module.module_generates_the_failure[\"fail\"].var.incoming": visit complete
+2022-10-07T17:44:34.459+0100 [TRACE] vertex "module.module_generates_the_failure[\"ok\"].var.incoming": visit complete
+2022-10-07T17:44:34.459+0100 [TRACE] vertex "module.module_generates_the_failure.var.incoming (expand)": dynamic subgraph completed successfully
+2022-10-07T17:44:34.459+0100 [TRACE] vertex "module.module_generates_the_failure.var.incoming (expand)": visit complete
+2022-10-07T17:44:34.459+0100 [TRACE] vertex "module.module_generates_the_failure.local.some_result (expand)": starting visit (*terraform.nodeExpandLocal)
+2022-10-07T17:44:34.459+0100 [TRACE] vertex "module.module_generates_the_failure.local.some_result (expand)": expanding dynamic subgraph
+2022-10-07T17:44:34.459+0100 [TRACE] Expanding local: adding module.module_generates_the_failure["bad"].local.some_result as *terraform.NodeLocal
+2022-10-07T17:44:34.459+0100 [TRACE] Expanding local: adding module.module_generates_the_failure["fail"].local.some_result as *terraform.NodeLocal
+2022-10-07T17:44:34.459+0100 [TRACE] Expanding local: adding module.module_generates_the_failure["ok"].local.some_result as *terraform.NodeLocal
+2022-10-07T17:44:34.459+0100 [TRACE] vertex "module.module_generates_the_failure.local.some_result (expand)": entering dynamic subgraph
+2022-10-07T17:44:34.460+0100 [TRACE] vertex "module.module_generates_the_failure[\"fail\"].local.some_result": starting visit (*terraform.NodeLocal)
+2022-10-07T17:44:34.460+0100 [TRACE] vertex "module.module_generates_the_failure[\"ok\"].local.some_result": starting visit (*terraform.NodeLocal)
+2022-10-07T17:44:34.460+0100 [TRACE] vertex "module.module_generates_the_failure[\"bad\"].local.some_result": starting visit (*terraform.NodeLocal)
+2022-10-07T17:44:34.460+0100 [TRACE] vertex "module.module_generates_the_failure[\"ok\"].local.some_result": visit complete
+2022-10-07T17:44:34.460+0100 [TRACE] vertex "module.module_generates_the_failure[\"bad\"].local.some_result": visit complete
+2022-10-07T17:44:34.460+0100 [TRACE] vertex "module.module_generates_the_failure[\"fail\"].local.some_result": visit complete
+2022-10-07T17:44:34.460+0100 [TRACE] vertex "module.module_generates_the_failure.local.some_result (expand)": dynamic subgraph completed successfully
+2022-10-07T17:44:34.460+0100 [TRACE] vertex "module.module_generates_the_failure.local.some_result (expand)": visit complete
+2022-10-07T17:44:34.460+0100 [TRACE] vertex "module.module_generates_the_failure.output.outgoing (expand)": starting visit (*terraform.nodeExpandOutput)
+2022-10-07T17:44:34.460+0100 [TRACE] vertex "module.module_generates_the_failure.output.outgoing (expand)": expanding dynamic subgraph
+2022-10-07T17:44:34.460+0100 [TRACE] Expanding output: adding module.module_generates_the_failure["bad"].output.outgoing as *terraform.NodeApplyableOutput
+2022-10-07T17:44:34.460+0100 [TRACE] Expanding output: adding module.module_generates_the_failure["fail"].output.outgoing as *terraform.NodeApplyableOutput
+2022-10-07T17:44:34.460+0100 [TRACE] Expanding output: adding module.module_generates_the_failure["ok"].output.outgoing as *terraform.NodeApplyableOutput
+2022-10-07T17:44:34.460+0100 [TRACE] vertex "module.module_generates_the_failure.output.outgoing (expand)": entering dynamic subgraph
+2022-10-07T17:44:34.460+0100 [TRACE] vertex "module.module_generates_the_failure[\"fail\"].output.outgoing": starting visit (*terraform.NodeApplyableOutput)
+2022-10-07T17:44:34.460+0100 [TRACE] vertex "module.module_generates_the_failure[\"ok\"].output.outgoing": starting visit (*terraform.NodeApplyableOutput)
+2022-10-07T17:44:34.460+0100 [TRACE] vertex "module.module_generates_the_failure[\"bad\"].output.outgoing": starting visit (*terraform.NodeApplyableOutput)
+2022-10-07T17:44:34.460+0100 [TRACE] evalCheckRules: module.module_generates_the_failure["fail"].output.outgoing status is now StatusFail
+2022-10-07T17:44:34.461+0100 [TRACE] evalCheckRules: module.module_generates_the_failure["ok"].output.outgoing status is now StatusPass
+2022-10-07T17:44:34.461+0100 [TRACE] evalCheckRules: module.module_generates_the_failure["bad"].output.outgoing status is now StatusFail
+2022-10-07T17:44:34.461+0100 [ERROR] vertex "module.module_generates_the_failure[\"bad\"].output.outgoing" error: Module output value precondition failed
+2022-10-07T17:44:34.461+0100 [TRACE] vertex "module.module_generates_the_failure[\"bad\"].output.outgoing": visit complete, with errors
+2022-10-07T17:44:34.461+0100 [ERROR] vertex "module.module_generates_the_failure[\"fail\"].output.outgoing" error: Module output value precondition failed
+2022-10-07T17:44:34.461+0100 [TRACE] vertex "module.module_generates_the_failure[\"fail\"].output.outgoing": visit complete, with errors
+2022-10-07T17:44:34.461+0100 [TRACE] setValue: Saving Create change for module.module_generates_the_failure["ok"].output.outgoing in changeset
+2022-10-07T17:44:34.461+0100 [TRACE] setValue: Saving value for module.module_generates_the_failure["ok"].output.outgoing in state
+2022-10-07T17:44:34.461+0100 [TRACE] setValue: Saving Create change for module.module_generates_the_failure["ok"].output.outgoing in changeset
+2022-10-07T17:44:34.461+0100 [TRACE] setValue: Saving value for module.module_generates_the_failure["ok"].output.outgoing in state
+2022-10-07T17:44:34.461+0100 [TRACE] vertex "module.module_generates_the_failure[\"ok\"].output.outgoing": visit complete
+2022-10-07T17:44:34.461+0100 [TRACE] vertex "module.module_generates_the_failure.output.outgoing (expand)": dynamic subgraph encountered errors: Module output value precondition failed,Module output value precondition failed
+2022-10-07T17:44:34.461+0100 [ERROR] vertex "module.module_generates_the_failure.output.outgoing (expand)" error: Module output value precondition failed
+2022-10-07T17:44:34.461+0100 [ERROR] vertex "module.module_generates_the_failure.output.outgoing (expand)" error: Module output value precondition failed
+2022-10-07T17:44:34.461+0100 [TRACE] vertex "module.module_generates_the_failure.output.outgoing (expand)": visit complete, with errors
+2022-10-07T17:44:34.461+0100 [TRACE] dag/walk: upstream of "module.module_generates_the_failure (close)" errored, so skipping
+2022-10-07T17:44:34.461+0100 [TRACE] dag/walk: upstream of "root" errored, so skipping
+2022-10-07T17:44:34.461+0100 [INFO]  backend/local: plan operation completed
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mModule output value precondition failed[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  on modules/generate_failure/main.tf line 16, in output "outgoing":
+[31m│[0m [0m  16:     condition = [4m(local.some_result == [true])[0m[0m
+[31m│[0m [0m    [90m├────────────────[0m
+[31m│[0m [0m[0m    [90m│[0m [1mlocal.some_result[0m is tuple with 1 element
+[31m│[0m [0m[0m
+[31m│[0m [0mSomething is wrong but we can't tell you what it is.
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mModule output value precondition failed[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  on modules/generate_failure/main.tf line 16, in output "outgoing":
+[31m│[0m [0m  16:     condition = [4m(local.some_result == [true])[0m[0m
+[31m│[0m [0m    [90m├────────────────[0m
+[31m│[0m [0m[0m    [90m│[0m [1mlocal.some_result[0m is tuple with 1 element
+[31m│[0m [0m[0m
+[31m│[0m [0mSomething is wrong but we can't tell you what it is.
+[31m╵[0m[0m
+2022-10-07T17:44:34.462+0100 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2022-10-07T17:44:34.462+0100 [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock
